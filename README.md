@@ -8,7 +8,7 @@ Stay tuned! This repo is in progress but will be ramping up for ECCV in August.
 ## Publication
 Please cite our paper if you find it useful for your research.
 ```
-@inproceedings{GrCoCVPR19,
+@inproceedings{GrCoECCV20,
   author = {Griffin, Brent A. and Corso, Jason J.},
   booktitle={The European Conference on Computer Vision (ECCV)},
   title = {Learning Object Depth from Camera Motion and Video Object Segmentation},
