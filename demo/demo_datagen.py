@@ -23,7 +23,7 @@ Use generated data to train your own network to predict depths given seg_masks
 and camera_movements. See paper for ideas on possible initial configurations.
 """
 
-# Save generated examples as a static data set (optional).
+# Save generated examples as a static dataset (optional).
 if save_examples:
 	result_dir = "../data/example_generated_data/"
 	for i in range(n_examples):
