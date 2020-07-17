@@ -23,7 +23,7 @@ __ECCV 2020 Supplementary Video:__ https://youtu.be/c90Fg_whjpI
 ## Using ODMS
 
 __Run__ ``./demo/demo_datagen.py`` to generate random ODMS data to train your model. <br />
-Example training data configurations are provided in the ``./config/`` folder. Has the option to save a static dataset as well. <br />
+Example training data configurations are provided in the ``./config/`` folder. Has the option to save a static dataset. <br />
 [native Python, has scipy dependency]
 
 __Run__ ``./demo/demo_dataset_eval.py`` to evaluate your model on the ODMS validation and test sets. <br />
