@@ -2,7 +2,7 @@
 Demonstration of how to evaluate a depth estimation model on ODMS.
 """
 
-import sys, os, cv2, IPython, numpy as np
+import sys, os, cv2, IPython, numpy as np, _pickle as pickle
 file_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(file_dir)
 sys.path.insert(0,"../")
@@ -10,7 +10,7 @@ import odms
 
 eval_set = "val" # or "test" once model training and development are complete.
 set_list = ["robot", "driving", "normal", "perturb"]
-display_iter=100; percent_error=[]; abs_error=[]
+display_iter=100; percent_error=[]; abs_error=[]; depths_all=[]
 
 for test_set in set_list:
 
@@ -28,7 +28,7 @@ for test_set in set_list:
 		camera_movement = test_data["camera_movement"][i]
 
 		"""
-		Use your own depth estimation model here:
+		Use your own depth estimation model here (to replace VOS-DE):
 		"""
 		depth_estimate = odms.vosde.estimate_depth(seg_masks, camera_movement)
 
@@ -39,6 +39,7 @@ for test_set in set_list:
 			print("%4d/%s" % (i, n))
 	percent_error.append(np.mean( abs(depths - ground_truth) / ground_truth))
 	abs_error.append(np.mean(abs(depths - ground_truth)))
+	depths_all.append(depths)
 	print("Mean Percent  Error: %.4f" % percent_error[-1]) 
 	print("Mean Absolute Error: %.4f (m)\n" % abs_error[-1]) 
 
@@ -47,4 +48,11 @@ print("\nResults summary for ODMS %s sets." % eval_set)
 for i, test_set in enumerate(set_list):
 	print("\n%s-%s:" % (test_set, eval_set))
 	print("Mean Percent  Error: %.4f" % percent_error[i]) 
-	print("Mean Absolute Error: %.4f (m)\n" % abs_error[i]) 
+	print("Mean Absolute Error: %.4f (m)" % abs_error[i]) 
+
+# Generate final results file.
+name = "VOS-DE"
+result_data = {"Result Name": name, "Set List": set_list, "Eval": eval_set, 
+				"Percent Error": percent_error, "Absolute Error": abs_error, 
+				"Depth Estimates": depths_all}
+pickle.dump(result_data, open("../results/%s_%s.pk" % (name, eval_set), "wb"))
