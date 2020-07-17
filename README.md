@@ -1,5 +1,6 @@
 # ODMS
-Object Depth via Motion and Segmentation Dataset
+__O__bject __D__epth via __M__otion and __S__egmentation Dataset<br />
+ODMS is the first dataset for motion- and segmentation-based depth estimation. ODMS training data is configurable and extensible, with each training example consisting of a series of object segmentation masks, camera movement distances, and ground truth object depth. As a benchmark evaluation, we also provide four ODMS validation and test sets with over 15,650 examples in multiple domains, including robotics and driving. Using ODMS, we are able to train a network to perform object depth estimation in real-time robot grasping experiments, demonstrating how our approach to depth estimation is a viable tool for 3D perception from a single RGB camera.
 
 Contact: Brent Griffin (griffb at umich dot edu)
 
