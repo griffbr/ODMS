@@ -34,7 +34,7 @@ Provides an example evaluation for the VOS-DE baseline. Results are saved in the
 
 | Method | Robot | Driving | Normal | Perturb | All |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-| [ODN-lr](https://arxiv.org/abs/2007.05676 "ECCV Paper") | 13.1 | 31.7 | 8.6 | 17.9 | 17.8 |
+| [ODN<sub>*lr*</sub>](https://arxiv.org/abs/2007.05676 "ECCV Paper") | 13.1 | 31.7 | 8.6 | 17.9 | 17.8 |
 | [VOS-DE](https://arxiv.org/abs/1903.08336) | 32.6 | 36.0 | 7.9 | 33.6 | 27.5 |
 
 Is your technique missing although it's published and the code is public? Let us know and we'll add it.
