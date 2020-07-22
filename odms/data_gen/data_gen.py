@@ -27,7 +27,7 @@ class DataGenerator:
 		# Determine random distances.
 		dist = np.zeros(shape=(n_ex, self.n_observations))
 		stpts = self.z_lim[0] + np.random.rand(n_ex) * self.z1_range
-		zn_range = self.z_lim[1] - stpts
+		zn_range = self.z_lim[1] - self.move_min - stpts
 		endpts = stpts + self.move_min + np.random.rand(n_ex) * zn_range
 		z_range = endpts - stpts
 		for i in range(1, self.n_observations-1):

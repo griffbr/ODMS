@@ -1,5 +1,5 @@
 # ODMS
-ODMS is the first dataset for learning **O**bject **D**epth via **M**otion and **S**egmentation. ODMS training data is configurable and extensible, with each training example consisting of a series of object segmentation masks, camera movement distances, and ground truth object depth. As a benchmark evaluation, we also provide four ODMS validation and test sets with over 15,650 examples in multiple domains, including robotics and driving. In our paper, we use an ODMS-trained network to perform object depth estimation in real-time robot grasping experiments, demonstrating how ODMS is a viable tool for 3D perception from a single RGB camera.
+ODMS is the first dataset for learning **O**bject **D**epth via **M**otion and **S**egmentation. ODMS training data is configurable and extensible, with each training example consisting of a series of object segmentation masks, camera movement distances, and ground truth object depth. As a benchmark evaluation, we also provide four ODMS validation and test sets with 15,650 examples in multiple domains, including robotics and driving. In our paper, we use an ODMS-trained network to perform object depth estimation in real-time robot grasping experiments, demonstrating how ODMS is a viable tool for 3D perception from a single RGB camera.
 
 Contact: Brent Griffin (griffb at umich dot edu)
 
@@ -34,8 +34,8 @@ Provides an example evaluation for the VOS-DE baseline. Results are saved in the
 
 | Method | Robot | Driving | Normal | Perturb | All |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-| [ODN<sub>*lr*</sub>](https://arxiv.org/abs/2007.05676 "ECCV Paper") | 13.1 | 31.7 | 8.6 | 17.9 | 17.8 |
-| [VOS-DE](https://arxiv.org/abs/1903.08336) | 32.6 | 36.0 | 7.9 | 33.6 | 27.5 |
+| [ODN<sub>*lr*</sub>](https://arxiv.org/abs/2007.05676 "ECCV Paper") | **13.1** | **31.7** | 8.6 | **17.9** | **17.8** |
+| [VOS-DE](https://arxiv.org/abs/1903.08336) | 32.6 | 36.0 | **7.9** | 33.6 | 27.5 |
 
 Is your technique missing although it's published and the code is public? Let us know and we'll add it.
 
