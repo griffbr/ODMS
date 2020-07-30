@@ -39,6 +39,12 @@ Provides an example evaluation for the VOS-DE baseline. Results are saved in the
 
 Is your technique missing although it's published and the code is public? Let us know and we'll add it.
 
+## Method
+
+__ECCV 2020 Presentation:__ https://youtu.be/ZD4Y4oQbdks
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ZD4Y4oQbdks/0.jpg)](https://youtu.be/ZD4Y4oQbdks)
+
 ## Use
 
 This code is available for non-commercial research purposes only.
