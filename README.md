@@ -1,4 +1,4 @@
-# ODMS
+# ODMS Dataset
 ODMS is the first dataset for learning **O**bject **D**epth via **M**otion and **S**egmentation. ODMS training data are configurable and extensible, with each training example consisting of a series of object segmentation masks, camera movement distances, and ground truth object depth. As a benchmark evaluation, we also provide four ODMS validation and test sets with 15,650 examples in multiple domains, including robotics and driving. In our paper, we use an ODMS-trained network to perform object depth estimation in real-time robot grasping experiments, demonstrating how ODMS is a viable tool for 3D perception from a single RGB camera.
 
 **(New)** An object detection-based version of the ODMS benchmark is [now available here](https://github.com/griffbr/ODMD/data/odms_detection "ODMD dataset website")!
