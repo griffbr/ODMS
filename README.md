@@ -1,22 +1,11 @@
 # ODMS
 ODMS is the first dataset for learning **O**bject **D**epth via **M**otion and **S**egmentation. ODMS training data are configurable and extensible, with each training example consisting of a series of object segmentation masks, camera movement distances, and ground truth object depth. As a benchmark evaluation, we also provide four ODMS validation and test sets with 15,650 examples in multiple domains, including robotics and driving. In our paper, we use an ODMS-trained network to perform object depth estimation in real-time robot grasping experiments, demonstrating how ODMS is a viable tool for 3D perception from a single RGB camera.
 
+**(New)** An object detection-based version of the ODMS benchmark is [now available here](https://github.com/griffbr/ODMD/data/odms_detection "ODMD dataset website")!
+
 Contact: Brent Griffin (griffb at umich dot edu)
 
-## Publication
-Please cite our [paper](https://arxiv.org/abs/2007.05676 "ECCV Paper") if you find it useful for your research.
-```
-@inproceedings{GrCoECCV20,
-  author = {Griffin, Brent A. and Corso, Jason J.},
-  booktitle={The European Conference on Computer Vision (ECCV)},
-  title = {Learning Object Depth from Camera Motion and Video Object Segmentation},
-  year = {2020}
-}
-```
-
-## Quick Introduction
-
-__ECCV 2020 Supplementary Video:__ https://youtu.be/c90Fg_whjpI
+__Quick Introduction:__ https://youtu.be/c90Fg_whjpI
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/c90Fg_whjpI/0.jpg)](https://youtu.be/c90Fg_whjpI)
 
@@ -34,13 +23,23 @@ Provides an example evaluation for the VOS-DE baseline. Results are saved in the
 
 | Method | Robot | Driving | Normal | Perturb | All |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-| [DBox](https://arxiv.org/abs/2103.01468 "CVPR 2021 Paper") | **11.5** | **24.8** | 11.8 | 20.3 | **17.1** |
-| [ODN<sub>*lr*</sub>](https://arxiv.org/abs/2007.05676 "ECCV 2020 Paper") | 13.1 | 31.7 | 8.6 | **17.9** | 17.8 |
-| [VOS-DE](https://arxiv.org/abs/1903.08336) | 32.6 | 36.0 | **7.9** | 33.6 | 27.5 |
+| [DBox](https://arxiv.org/abs/2103.01468 "Depth from Camera Motion and Object Detection, CVPR 2021") | **11.5** | **24.8** | 11.8 | 20.3 | **17.1** |
+| [ODN<sub>*lr*</sub>](https://arxiv.org/abs/2007.05676 "Learning Object Depth from Camera Motion and Video Object Segmentation, ECCV 2020") | 13.1 | 31.7 | 8.6 | **17.9** | 17.8 |
+| [Box<sub>LS</sub>](https://arxiv.org/abs/2103.01468 "Depth from Camera Motion and Object Detection, CVPR 2021") | 17.6 | 33.3 | 13.7 | 36.6 | 25.3 |
+| [VOS-DE](https://openaccess.thecvf.com/content_WACV_2020/html/Griffin_Video_Object_Segmentation-based_Visual_Servo_Control_and_Object_Depth_Estimation_WACV_2020_paper.html "Video Object Segmentation-based Visual Servo Control and Object Depth Estimation on a Mobile Robot, WACV 2020") | 32.6 | 36.0 | **7.9** | 33.6 | 27.5 |
 
 Is your technique missing although it's published and the code is public? Let us know and we'll add it.
 
-## Method
+## Publication
+Please cite our [paper](https://arxiv.org/abs/2007.05676 "ECCV Paper") if you find it useful for your research.
+```
+@inproceedings{GrCoECCV20,
+  author = {Griffin, Brent A. and Corso, Jason J.},
+  booktitle={The European Conference on Computer Vision (ECCV)},
+  title = {Learning Object Depth from Camera Motion and Video Object Segmentation},
+  year = {2020}
+}
+```
 
 __ECCV 2020 Presentation:__ https://youtu.be/ZD4Y4oQbdks
 
