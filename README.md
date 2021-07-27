@@ -23,9 +23,9 @@ Provides an example evaluation for the VOS-DE baseline. Results are saved in the
 
 | Method | Robot | Driving | Normal | Perturb | All |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-| [DBox](https://arxiv.org/abs/2103.01468 "Depth from Camera Motion and Object Detection, CVPR 2021") | **11.5** | **24.8** | 11.8 | 20.3 | **17.1** |
+| [DBox](https://openaccess.thecvf.com/content/CVPR2021/html/Griffin_Depth_From_Camera_Motion_and_Object_Detection_CVPR_2021_paper.html "Depth from Camera Motion and Object Detection, CVPR 2021") | **11.5** | **24.8** | 11.8 | 20.3 | **17.1** |
 | [ODN<sub>*lr*</sub>](https://arxiv.org/abs/2007.05676 "Learning Object Depth from Camera Motion and Video Object Segmentation, ECCV 2020") | 13.1 | 31.7 | 8.6 | **17.9** | 17.8 |
-| [Box<sub>LS</sub>](https://arxiv.org/abs/2103.01468 "Depth from Camera Motion and Object Detection, CVPR 2021") | 17.6 | 33.3 | 13.7 | 36.6 | 25.3 |
+| [Box<sub>LS</sub>](https://openaccess.thecvf.com/content/CVPR2021/html/Griffin_Depth_From_Camera_Motion_and_Object_Detection_CVPR_2021_paper.html "Depth from Camera Motion and Object Detection, CVPR 2021") | 17.6 | 33.3 | 13.7 | 36.6 | 25.3 |
 | [VOS-DE](https://openaccess.thecvf.com/content_WACV_2020/html/Griffin_Video_Object_Segmentation-based_Visual_Servo_Control_and_Object_Depth_Estimation_WACV_2020_paper.html "Video Object Segmentation-based Visual Servo Control and Object Depth Estimation on a Mobile Robot, WACV 2020") | 32.6 | 36.0 | **7.9** | 33.6 | 27.5 |
 
 Is your technique missing although it's published and the code is public? Let us know and we'll add it.
