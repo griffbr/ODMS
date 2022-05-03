@@ -51,7 +51,7 @@ def initialize_test_data(eval_set, eval_name):
 		files = f_out; dists = d_out; depths = d_out
 
 	# Make sure camera movement distance is relative to the starting point.
-	dists = [d - d[0] for d in np.array(dists)]
+	dists = [np.array(d) - d[0] for d in dists]
 
 	return {"files": files, "camera_movement": dists, "depths": depths, 
 													"n_examples": len(files)}
