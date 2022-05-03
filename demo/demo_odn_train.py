@@ -8,6 +8,8 @@ os.chdir(file_dir)
 sys.path.insert(0,"../")
 import odms, odn
 
+net_name = "ODNlr"
+
 # Select configuration.
 datagen_config = "../config/standard_data.yaml" # Other settings in directory.
 odn_config = "../config/odnlr.yaml"
