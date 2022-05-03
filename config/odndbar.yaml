@@ -1,0 +1,11 @@
+model_name: ODNdbar
+dim: [10,112,112]
+kernal: [32, 64, 128, 128, 256]
+layer: [1, 1, 1, 1]
+stride: [2, 2, 2, 2]
+scale_out: False # Predict mask scale change (as opposed to depth) (Eq. 13).
+scale_n: True # Predict scale of n to 1st or 1 to nth mask (if scale_out).
+template: []
+template_path: ../data/misc/
+normalized_distance_input: True # Normalize overall distance to be 1 (Eq. 10).
+fc_dropout: 0.2

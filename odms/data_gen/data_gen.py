@@ -25,19 +25,23 @@ class DataGenerator:
 		# See Section 5.1 of our paper for more details.
 
 		# Determine random distances.
-		dist = np.zeros(shape=(n_ex, self.n_observations))
+		dist = np.zeros(shape=(n_ex, self.n_observations), dtype='float32')
 		stpts = self.z_lim[0] + np.random.rand(n_ex) * self.z1_range
+
+		# Distibution of end points accounts for move minimum.
 		zn_range = self.z_lim[1] - self.move_min - stpts
 		endpts = stpts + self.move_min + np.random.rand(n_ex) * zn_range
+			
+		# Select random interior camera movement points.
 		z_range = endpts - stpts
 		for i in range(1, self.n_observations-1):
 			dist[:,i] = stpts + np.random.rand(n_ex) * z_range
-		dist[:,1:-2].sort(axis=1)
+		dist[:,1:-1].sort(axis=1)
 		dist[:,0] = stpts
 		dist[:,-1] = endpts
 
 		# Determine camera movement and ground truth object depth.
-		camera_movement = np.array([d - d[0] for d in dist])
+		camera_movement = np.array([d - d[0] for d in dist], dtype='float32')
 		depth = dist[:,0]
 
 		# Generate random mask parameters.

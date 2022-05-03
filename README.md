@@ -30,6 +30,14 @@ Provides an example evaluation for the VOS-DE baseline. Results are saved in the
 
 Is your technique missing although it's published and the code is public? Let us know and we'll add it.
 
+## Using ODN Method
+
+__Run__ ``./demo/demo_odn_train.py`` to train your own ODN model using ODMS. <br />
+__Run__ ``./demo/demo_odn_eval.py`` after training to evaluate your ODN model. <br />
+Example training and ODN model configurations are provided in the ``./config/`` folder.
+Models are saved in the ``./results/model/`` folder. <br />
+[native Python, has Torch dependency]
+
 ## Publication
 Please cite our [paper](https://arxiv.org/abs/2007.05676 "Learning Object Depth from Camera Motion and Video Object Segmentation pdf") if you find it useful for your research.
 ```
