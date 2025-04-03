@@ -49,9 +49,9 @@ Please cite our [paper](https://arxiv.org/abs/2007.05676 "Learning Object Depth 
 }
 ```
 
-__ECCV 2020 Presentation:__ https://youtu.be/ZD4Y4oQbdks
+__ECCV 2020 Presentation:__ https://youtu.be/CwE4hQosYrg
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ZD4Y4oQbdks/0.jpg)](https://youtu.be/ZD4Y4oQbdks)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CwE4hQosYrg/0.jpg)](https://youtu.be/CwE4hQosYrg)
 
 ## Use
 
