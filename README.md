@@ -5,9 +5,9 @@ ODMS is the first dataset for learning **O**bject **D**epth via **M**otion and *
 
 Contact: Brent Griffin (griffb at umich dot edu)
 
-__Quick Introduction:__ https://youtu.be/c90Fg_whjpI
+__Quick Introduction:__ https://youtu.be/Owrsv1lV3IA
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/c90Fg_whjpI/0.jpg)](https://youtu.be/c90Fg_whjpI)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Owrsv1lV3IA/0.jpg)](https://youtu.be/Owrsv1lV3IA)
 
 ## Using ODMS
 
